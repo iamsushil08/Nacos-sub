@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Login{% endblock %}
+{% block content %}
+<div class="logdiv">
+  <h2 class="h2log">Login</h2>
+  <form class="form1" method="POST">
+    {% csrf_token %}
+  <label id="id_username" for="id_username">Username</label>
+  <input class="usrinp" type="text" name="username" required><br><br>
+
+  <label id="id_password"  for="id_password">Password</label>
+  <input class="usrpass" type="password" name="password" required><br><br>
+  
+  </form>
+  <button class="btn2" type="submit">Login</button>
+  <p class="signup-text">
+    Don't have an account? <a href="{% url 'register' %}">Sign up here</a>
+  </p>
+
+</div>
+{% endblock %}

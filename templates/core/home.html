@@ -1,0 +1,69 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home - Job Portal{% endblock %}
+{% block content %}
+ <img class="img1" src="{% static 'images/img1.webp' %}" alt="Welcome">
+ <div class="secdiv">
+    <h1 class="h1a">Embark on Your <br> Fragrance <br> Journey Today .</h1>
+    <button class="btn1">Shop Now </button>
+ </div>
+
+ <h1 class="h1coll">Collections</h1>
+ <div class="imgdiv">
+   <div class="divone">
+      <img class="imgone" src="{% static 'images/men.webp' %}" alt="">
+      <p class="pone">Men <i class="fa-solid fa-arrow-right"></i></p>
+   </div>
+   <div class="divtwo">
+      <img class="imgtwo" src="{% static 'images/womens.webp' %}" alt="">
+      <p class="ptwo">Women <i class="fa-solid fa-arrow-right"></i></p>
+   </div>
+   <div class="divthree">
+      <img class="imgthree" src="{% static 'images/unisex.webp' %}" alt="">
+      <p class="pthree">Unisex <i class="fa-solid fa-arrow-right"></i> </p>
+   </div>
+</div>
+
+  <h1 class="best">Best Sellers </h1>
+  <p class="fav">People's Favourite <i class="fa-solid fa-heart"></i> </p>
+  <div class="secmaindiv">
+   <div class="secone">
+      <img class="secimg" src="{% static 'images/ninefourthree.webp' %}" alt="">
+   </div>
+   <div class="sectwo">
+<p>My Store </p>
+<h1 class="layton ">LAYTON EAU <br> DE PARFUM | <br> PARFUMS de <br> MARLY</h1>
+<p class="price"> <s>RS 46,000.00 NPR</s> Rs 30,800.00 NPR</p>
+  <p class="psale">Sale</p>
+  <Button class="addcart">Add To Cart </Button> <br><br>
+  <Button class="BuyNow">Buy It Now </Button>
+ 
+ </div>
+
+   </div>
+  </div>
+
+<div class="seclastdiv">
+   <img class="naco" src="{%static 'images/naco.webp'%}" alt="">
+   <div class="seclastone">
+      <img class="nacoone" src="{%static 'images/ninefourthree.webp'%}" alt="">
+   </div>
+  
+</div>
+
+<div class="necosnep">
+   <h2 class="mnp">Welcome to Nacos Nepal </h2>
+  
+</div>
+<p class="mnps">Nacos Nepal is dedicated
+ to providing the best fragrances in Nepal sourced from around the world. <br> Set off on your fragrance adventure today with Nacos Nepal.</p>
+
+ <div class="mnpss">
+   <p class="susc">Subscribes to Our Channels </p>
+   <p class="suscs">Join our email list for exclussive offers and the latest news .</p>
+
+ </div>
+ 
+{% endblock %}
+    

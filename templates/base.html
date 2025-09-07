@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esite</title>
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    
+</head>
+<body>
+    <h1 class="na" >Nacos Nepal  </h1>
+   <div class="nav">
+   <a class="home" href="{% url 'home' %}">Home</a>
+   <a class="about" href="{% url 'shop' %}">Shop</a>
+   <a href="">Designer</a>
+   <a href="/">Contact Us</a>
+   <a href="">Message </a>
+   <a href="{% url 'login' %}">Login</a>
+  </div>
+
+
+    <div class="main-content">
+        {% block content %}
+       
+        {% endblock %}
+      </div>
+</body>
+</html>
